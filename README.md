@@ -1,5 +1,6 @@
 # Game-project
 Game học phần Lập trình nâng cao : Treasure Hunt
+
 I.	Hướng dẫn cài đặt:
 
 •	Bước 1: Fork repository đó về tài khoản Github của mình.
@@ -19,6 +20,7 @@ II.	Mô tả chung về chương trình:
 III.	Các chức năng trong trò chơi:
 
 •	Menu của game: Người chơi lựa chọn độ khó bằng các nút trên bàn phím theo hướng dẫn.
+![Uploading image.png…]()
 
 •	Đồ họa của game.
 
@@ -31,8 +33,6 @@ III.	Các chức năng trong trò chơi:
 •	Ở level 2 và 3, màn hình sẽ xuất hiện thêm 1 mê cung ( xây bằng gạch), người chơi phải di chuyển sao cho nhân vật không bị đâm vào tường, nếu bị đâm màn hình sẽ hiện vụ va chạm, trò chơi kết thúc và người chơi thua cuộc.
 
 •	Ở góc cuối màn hình là kho báu mà người chơi cần chinh phục. Khi lấy được kho báu, số điểm của người chơi sẽ tăng và thắng cuộc.
-
- 
 
 •	Khi người chơi thắng cuộc có hiện số điểm mà người chơi đạt được.
 
