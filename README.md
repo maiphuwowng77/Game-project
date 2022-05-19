@@ -20,7 +20,6 @@ II.	Mô tả chung về chương trình:
 III.	Các chức năng trong trò chơi:
 
 •	Menu của game: Người chơi lựa chọn độ khó bằng các nút trên bàn phím theo hướng dẫn.
-![Uploading image.png…]()
 
 •	Đồ họa của game.
 
