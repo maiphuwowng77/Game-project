@@ -51,12 +51,14 @@ V.	Kết luận:
 
 •	Nguồn tham khảo:
 
+  o	Cách sử dụng thư viện SDL2 trên trang https://lazyfoo.net/tutorials/SDL/
+
   o	Hình ảnh nhân vật, quả bom, kim cương, tường, rương kho báu tham khảo trên mạng và tự vẽ lại trên trang https://www.pixilart.com
   
   o	Hình ảnh game over, win, vụ nổ, vụ va chạm được lấy trên mạng.
   
-  o	Hình ảnh menu tự thiết kế.
-  
+  o	Hình ảnh menu, score tự thiết kế.
+    
 •	Điều tâm đắc: Đã có thể tự sáng tạo ra một dự án game nhỏ bằng cách vận dụng những kiến thức có được trong bộ môn lập trình nâng cao, có thể sử dụng các hàm cơ bản trong thư viện lập trình SDL2 và một số thư viện mở rộng của nó.
 
 •	Hướng phát triển : 
