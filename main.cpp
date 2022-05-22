@@ -344,7 +344,7 @@ void treasure(SDL_Renderer* renderer){
 bool Treasure(Player player){
 	int m=player.getxpos()-740;
 	int n=player.getypos()-540;
-	if(m*m+n*n<50*50){return true;}// Canh cua texture la 20
+	if(m*m+n*n<40*40){return true;}// Canh cua texture la 20
 	else return false;
 }
 
@@ -601,7 +601,20 @@ bool RandDiamond(Player player){
 	return false;
 }
 void Score(SDL_Renderer* renderer, int score){
+	SDL_SetRenderDrawColor(renderer, 0,0, 0, 100);
+	// clear the window to background color
+    SDL_RenderClear(renderer);
 	SDL_Texture* scoreTexture;
+	SDL_Rect desRect, srcRect;
+	//SDL_Texture*treasureTexture=loadTexture(renderer, "image/treasure.bmp");
+	//SDL_QueryTexture(treasureTexture, NULL, NULL, &srcRect.w, &srcRect.h);
+	srcRect.x = 0;
+    srcRect.y = 0;
+
+    desRect.x = 0;
+    desRect.y = 50;
+    desRect.h = 500;
+    desRect.w = 800;
 	if(score>0&& score<1000){
 		scoreTexture=loadTexture(renderer, "image/score1.bmp");
 	}else{
@@ -648,7 +661,7 @@ void Score(SDL_Renderer* renderer, int score){
 		}
 	}
 	//SDL_Texture*loseTexture=loadTexture(renderer, "image/gameover.bmp");
-	SDL_RenderCopy(renderer,scoreTexture,NULL,NULL);
+	SDL_RenderCopy(renderer,scoreTexture,NULL,&desRect);
 	SDL_RenderPresent(renderer);
     //waitUntilKeyPressed();
 }
