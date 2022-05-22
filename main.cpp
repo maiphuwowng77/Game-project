@@ -618,35 +618,35 @@ void Score(SDL_Renderer* renderer, int score){
 	if(score>0&& score<1000){
 		scoreTexture=loadTexture(renderer, "image/score1.bmp");
 	}else{
-		if(score>1000&& score<1500){
+		if(score>=1000&& score<1500){
 			scoreTexture=loadTexture(renderer, "image/score2.bmp");
 		}
 		else{
-			if(score>1500&& score<2000){
+			if(score>=1500&& score<2000){
 				scoreTexture=loadTexture(renderer, "image/score3.bmp");
 			}else{
-				if(score>2000&& score<3000){
+				if(score>=2000&& score<3000){
 					scoreTexture=loadTexture(renderer, "image/score4.bmp");
 				}else{
-					if(score>3000&& score<4000){
+					if(score>=3000&& score<4000){
 						scoreTexture=loadTexture(renderer, "image/score5.bmp");
 					}else{
-						if(score>4000&& score<5000){
+						if(score>=4000&& score<5000){
 							scoreTexture=loadTexture(renderer, "image/score6.bmp");
 						}else{
-							if(score>5000&& score<6000){
+							if(score>=5000&& score<6000){
 								scoreTexture=loadTexture(renderer, "image/score7.bmp");
 							}else{
-								if(score>6000&& score<7000){
+								if(score>=6000&& score<7000){
 									scoreTexture=loadTexture(renderer, "image/score8.bmp");
 								}else{
-									if(score>7000&& score<8000){
+									if(score>=7000&& score<8000){
 										scoreTexture=loadTexture(renderer, "image/score9.bmp");
 									}else{
-										if(score>8000&& score<10000){
+										if(score>=8000&& score<10000){
 											scoreTexture=loadTexture(renderer, "image/score10.bmp");
 										}else{
-											if(score>10000){
+											if(score>=10000){
 												scoreTexture=loadTexture(renderer, "image/score11.bmp");
 											}
 										}
