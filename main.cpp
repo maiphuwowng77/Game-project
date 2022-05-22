@@ -600,14 +600,15 @@ bool RandDiamond(Player player){
 	if(m*m+n*n<30*30){return true;}
 	return false;
 }
+// hien diem so nguoi choi dat duoc
 void Score(SDL_Renderer* renderer, int score){
+	
 	SDL_SetRenderDrawColor(renderer, 0,0, 0, 100);
 	// clear the window to background color
     SDL_RenderClear(renderer);
 	SDL_Texture* scoreTexture;
 	SDL_Rect desRect, srcRect;
-	//SDL_Texture*treasureTexture=loadTexture(renderer, "image/treasure.bmp");
-	//SDL_QueryTexture(treasureTexture, NULL, NULL, &srcRect.w, &srcRect.h);
+	
 	srcRect.x = 0;
     srcRect.y = 0;
 
