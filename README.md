@@ -12,20 +12,28 @@
 -	Nhiệm vụ trong game: Nhiệm vụ của bạn trong game là điều khiển nhân vật bằng các nút (←, →, ↑ , ↓) để tránh khỏi các chướng ngại vật (Bom và tường). Trên đường di chuyển sẽ xuất hiện các viên kim cương, bạn lấy được càng nhiều kim cương thì điểm số càng cao. Nhiệm vụ cuối của bạn là tìm đến chỗ của kho báu. Khi lấy được kho báu nhiệm vụ của bạn hoàn thành và bạn là người chiến thắng.
 ## III.	Các chức năng trong trò chơi:
 -	Menu của game: Người chơi lựa chọn độ khó bằng các nút trên bàn phím theo hướng dẫn.
+
 ![Menu](https://i.imgur.com/yELhLJj.jpg)
+
 -	Đồ họa của game.
 -	Nhận input từ bàn phím để di chuyển nhân vật
 -	Chọn vị trí và đặt các quả bom trên đường đi. Khi nhân vật nằm trong vùng có bom với bán kính xác định, quả bom sẽ phát nổ, hình ảnh vụ nổ được hiện lên, người chơi thua cuộc.
+
 ![explode](https://i.imgur.com/K7eg355.jpg)
+
 -	Các viên kim cương được đặt rải rác khi nhân vật lấy được kim cương viên kim cương sẽ biến mất, một viên kim cương khác xuất hiện đồng thời điểm số của người chơi sẽ tăng.
 -	Ở level 2 và 3, màn hình sẽ xuất hiện thêm 1 mê cung ( xây bằng gạch), người chơi phải di chuyển sao cho nhân vật không bị đâm vào tường, nếu bị đâm màn hình sẽ hiện vụ va chạm, trò chơi kết thúc và người chơi thua cuộc.
+
 ![collision](https://i.imgur.com/MaZ54dx.jpg)
+
 -	Ở góc cuối màn hình là kho báu mà người chơi cần chinh phục. Khi lấy được kho báu, số điểm của người chơi sẽ tăng và thắng cuộc.
 
 ![screen](https://i.imgur.com/xj3BKPX.jpg)
 
 -	Khi người chơi thắng cuộc có hiện số điểm mà người chơi đạt được.
+
 ![score](https://i.imgur.com/F1XrKKk.jpg)
+
 -	Khi trò chơi kết thúc, người chơi ấn phím bất kì trên bàn phím để thoát chương trình.
 ## IV.	Các kỹ thuật lập trình được sử dụng trong chương trình:
 -	Mảng ( các quả bom, tường và kim cương)
