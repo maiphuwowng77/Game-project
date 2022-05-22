@@ -660,6 +660,7 @@ void Score(SDL_Renderer* renderer, int score){
 			
 		}
 	}
+	
 	//SDL_Texture*loseTexture=loadTexture(renderer, "image/gameover.bmp");
 	SDL_RenderCopy(renderer,scoreTexture,NULL,&desRect);
 	SDL_RenderPresent(renderer);
