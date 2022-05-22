@@ -50,7 +50,6 @@ int main(int argc, char* argv[])
 	SDL_Event mainEvent;
 	SDL_Event e;
 	int score = 0;
-	//bool isRunning = true;
 
 	int n;// so qua bom
 	int level ;// do kho
