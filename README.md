@@ -19,7 +19,9 @@
 -	Các viên kim cương được đặt rải rác khi nhân vật lấy được kim cương viên kim cương sẽ biến mất, một viên kim cương khác xuất hiện đồng thời điểm số của người chơi sẽ tăng.
 -	Ở level 2 và 3, màn hình sẽ xuất hiện thêm 1 mê cung ( xây bằng gạch), người chơi phải di chuyển sao cho nhân vật không bị đâm vào tường, nếu bị đâm màn hình sẽ hiện vụ va chạm, trò chơi kết thúc và người chơi thua cuộc.
 -	Ở góc cuối màn hình là kho báu mà người chơi cần chinh phục. Khi lấy được kho báu, số điểm của người chơi sẽ tăng và thắng cuộc.
-![screen](https://scontent.xx.fbcdn.net/v/t1.15752-9/280415790_755693232232162_1012612004880580403_n.jpg?stp=dst-jpg_s261x260&_nc_cat=101&ccb=1-7&_nc_sid=aee45a&_nc_ohc=eDRblRFcBU8AX_jSBDZ&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AVK02uA_ukd6LsrSY85_hdqpmmddRSB4fM1Vc1jD7FbFkw&oe=62AD9D18)
+
+![screen](https://prnt.sc/WX2aekIRZoj6)
+
 -	Khi người chơi thắng cuộc có hiện số điểm mà người chơi đạt được.
 -	Khi trò chơi kết thúc, người chơi ấn phím bất kì trên bàn phím để thoát chương trình.
 ## IV.	Các kỹ thuật lập trình được sử dụng trong chương trình:
