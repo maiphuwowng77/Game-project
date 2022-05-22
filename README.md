@@ -11,7 +11,7 @@
 
 -	Nhiệm vụ trong game: Nhiệm vụ của bạn trong game là điều khiển nhân vật bằng các nút (←, →, ↑ , ↓) để tránh khỏi các chướng ngại vật (Bom và tường). Trên đường di chuyển sẽ xuất hiện các viên kim cương, bạn lấy được càng nhiều kim cương thì điểm số càng cao. Nhiệm vụ cuối của bạn là tìm đến chỗ của kho báu. Khi lấy được kho báu nhiệm vụ của bạn hoàn thành và bạn là người chiến thắng.
 ## III.	Các chức năng trong trò chơi:
-### Video minh họa sản phẩm:
+### Video minh họa sản phẩm: https://www.youtube.com/watch?v=t5bNhSYSl40
 -	Menu của game: Người chơi lựa chọn độ khó bằng các nút trên bàn phím theo hướng dẫn.
 
  ![Menu](https://i.imgur.com/yELhLJj.jpg)
