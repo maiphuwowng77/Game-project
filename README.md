@@ -14,7 +14,7 @@
 ### Video minh họa sản phẩm:
 -	Menu của game: Người chơi lựa chọn độ khó bằng các nút trên bàn phím theo hướng dẫn.
 
-![Menu](https://i.imgur.com/yELhLJj.jpg)
+ ![Menu](https://i.imgur.com/yELhLJj.jpg)
 
 -	Đồ họa của game.
 -	Nhận input từ bàn phím để di chuyển nhân vật
