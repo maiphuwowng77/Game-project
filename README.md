@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Game học phần Lập trình nâng cao : TREASURE HUNT
   21020783 - Lương Mai Phương
 ## I.	Hướng dẫn cài đặt:
@@ -39,4 +40,6 @@
 -	Thêm mục hướng dẫn trong menu
 -	Thêm phần lưu giữ high score từ các lần chơi trước
 -	Tạo ra nhiều level với độ khó cao và hình ảnh đa dạng hơn nữa
+=======
+>>>>>>> cdd5eb324676c982b182961d298cdb1eddb2ab06
 
