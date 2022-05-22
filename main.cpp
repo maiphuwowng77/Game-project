@@ -373,6 +373,7 @@ void createBomb(SDL_Renderer* renderer,const char* bombimage,int n){
 		}
 	}
 }
+
 //Hien bom len man hinh theo level
 void renderBomb(SDL_Renderer* renderer,int n){
 	if(n==10){
