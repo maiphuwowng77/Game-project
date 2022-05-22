@@ -153,8 +153,8 @@ int main(int argc, char* argv[])
 					desRect.y -=100;
 					if(desRect.x<-20) desRect.x=-20;
 					if(desRect.y<-20) desRect.y=-20;
-					desRect.w = 250;
-					desRect.h = 250;
+					desRect.w = 300;
+					desRect.h = 300;
 					SDL_Texture*explodeTexture=loadTexture2(renderer, "image/explosion.bmp");
 					SDL_RenderCopy(renderer,explodeTexture,NULL,&desRect);
 					SDL_RenderPresent(renderer);
