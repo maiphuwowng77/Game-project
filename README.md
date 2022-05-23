@@ -54,4 +54,5 @@
 -	Thêm mục hướng dẫn trong menu
 -	Thêm phần lưu giữ high score từ các lần chơi trước
 -	Tạo ra nhiều level với độ khó cao và hình ảnh đa dạng hơn nữa
+-     Tạo ra chức năng chơi lại
 
