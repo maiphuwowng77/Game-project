@@ -764,13 +764,12 @@ bool valid2(int p, int q, int level)
 // Kiem tra xem nguoi choi có lay duoc vien kim cuong random ko?
 bool RandDiamond(Player player)
 {
-	int m = player.getxpos() - randDiamond.getxpos() + 5;
-	int n = player.getypos() - randDiamond.getypos() + 5;
-	if (m * m + n * n < 30 * 30)
-	{
-		return true;
-	}
-	return false;
+	int m = player.getxpos() - randDiamond.getxpos() + 40;
+	int n = player.getxpos() - randDiamond.getxpos() - 30;
+	int p = player.getypos() - randDiamond.getypos() + 40;
+	int q = player.getypos() - randDiamond.getypos() - 30;
+	if (m <= 0 || n >= 0 || p <= 0 || q >= 0) return false;
+	else return true;
 }
 // hien diem so nguoi choi dat duoc
 void Score(SDL_Renderer *renderer, int score)
