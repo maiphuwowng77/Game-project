@@ -37,8 +37,7 @@
 
 -	Khi trò chơi kết thúc, người chơi ấn phím bất kì trên bàn phím để thoát chương trình.
 ## IV.	Các kỹ thuật lập trình được sử dụng trong chương trình:
--	Mảng ( các quả bom, tường và kim cương)
--	Con trỏ
+-	Mảng ( các quả bom, tường và kim cương
 -	Cấu trúc, lớp ( các lớp bom, kim cương, tường, người chơi và các hàm sử dụng để khởi tạo, hiện lên màn hình, di chuyển, xóa,…)
 -	Thư viện lập trình SDL2 và các thư viện mở rộng của nó: Các hàm cơ bản trong thư viện.
 ## V.	Kết luận:
