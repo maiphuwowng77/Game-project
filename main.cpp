@@ -34,6 +34,7 @@ bool collision(Player player,int level);
 void RenderScore(SDL_Renderer* renderer, int score);
 void createrandDiamond(SDL_Renderer* renderer, int level);
 bool valid(int p, int q, int level);
+bool valid2(int p, int q, int level);
 void Score(SDL_Renderer* renderer, int score);
 
 int Menu(SDL_Renderer* renderer,SDL_Event e);
@@ -563,7 +564,7 @@ void createrandDiamond(SDL_Renderer* renderer,int level){
 	do{
 		x = (rand()%a +1)*30;
 		y = (rand()%b +1)*30;
-	} while(valid(x,y,level)==false);
+	} while(valid(x,y,level)==false || valid2(x,y,level)==false);
 	
 	randDiamond.create(renderer,"image/diamond.bmp",x,y);
 		//randDiamond.Render(renderer);
@@ -592,6 +593,29 @@ bool valid(int m, int n, int level){
 		}
 	}
 	return a;
+}
+// Kiem tra xem kim cuong có nam trong tuong ko?
+//p, q la toa do cua randDiamond
+bool valid2(int p, int q, int level){
+	//bool a= true;
+	if(level==3){
+		for(int i=0;i<55;i++){
+			int x = wall[i].getxpos();
+			int y = wall[i].getypos();
+			if(p>=x-10&&p<=x+10&&q<y+40&&y>=y){
+				return false;
+			}
+		}
+		for(int i=55;i<115;i++){
+			int x = wall[i].getxpos();
+			int y = wall[i].getypos();
+			if(p>=x&&p<x+20&&q<=y+10&&y>=y-10){
+				return false;
+			}
+		}
+		return true;
+	}
+	return true;
 }
 // Kiem tra xem nguoi choi có lay duoc vien kim cuong random ko?
 bool RandDiamond(Player player){
