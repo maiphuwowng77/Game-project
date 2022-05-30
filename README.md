@@ -3,9 +3,10 @@
       21020783 - Lương Mai Phương
 ## I.	Hướng dẫn cài đặt:
 -	Bước 1: Fork repository đó về tài khoản Github của mình.
--	Bước 2: Sao chép repository trên về máy local bằng lệnh: git clone https://github.com/[YOUR_USERNAME]/Game-project.git
--	Bước 3: Cài MinGW-W64, thư viện lập trình SDL2 và một số thư viện mở rộng của nó (SDL2_image, SDL2_ttf) theo hướng dẫn tại https://pie-cheque-188.notion.site/C-i-t-h-a-C-Windows-ef0a99a8dcae4dae86a39dc1cbc35980
--	Bước 4: Chạy chương trình bằng lệnh: mingw32-make và .\main
+- Bước 2: Sử dụng ứng dụng vscode (nếu chưa có tải về tại link https://code.visualstudio.com/download) 
+-	Bước 3: Sao chép repository trên về máy local bằng lệnh: git clone https://github.com/[YOUR_USERNAME]/Game-project.git tại mục terminal của vscode
+-	Bước 4: Cài MinGW-W64, thư viện lập trình SDL2 và một số thư viện mở rộng của nó (SDL2_image, SDL2_ttf) theo hướng dẫn tại https://pie-cheque-188.notion.site/C-i-t-h-a-C-Windows-ef0a99a8dcae4dae86a39dc1cbc35980
+-	Bước 5: Chạy chương trình bằng lệnh: mingw32-make và .\main ở mục terminal của vscode
 ## II.	Mô tả chung về chương trình:
 -	Game Treasure Hunt là một game vượt chướng ngại vật để tìm kiếm kho báu. Game có 3 level tương ứng với những độ khó khác nhau ( level càng cao thì càng nhiều vật cản và tốc độ của nhân vật cũng nhanh hơn). 
 
