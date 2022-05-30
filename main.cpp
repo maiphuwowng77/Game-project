@@ -446,40 +446,42 @@ void renderBomb(SDL_Renderer *renderer, int n)
 // Kiem tra xem nguoi choi co di vao bom khong?
 bool explode(Player player, int n)
 {
-	//bool a = false;
+	bool a = false;
 	if (n == 10)
 	{
 		for (int i = 0; i < n; i++)
 		{
-			int m = player.getxpos() - bombZ[i].getxpos() + 40;
-			int n = player.getxpos() - bombZ[i].getxpos() - 30;
-			int p = player.getypos() - bombZ[i].getypos() + 40;
-			int q = player.getypos() - bombZ[i].getypos() - 30;
-			if (m <= 0 || n >= 0 || p <= 0 || q >= 0)
-				continue;
-			else
-				return true;
-			// if(m*m+n*n<30*30){a = true;break;}// Canh cua texture la 30
+			//int m = player.getxpos() - bombZ[i].getxpos() + 40;
+			//int n = player.getxpos() - bombZ[i].getxpos() - 30;
+			//int p = player.getypos() - bombZ[i].getypos() + 40;
+			//int q = player.getypos() - bombZ[i].getypos() - 30;
+			//if (m <= 0 || n >= 0 || p <= 0 || q >= 0)
+			//	continue;
+			//else
+			//	return true;
+			int m = player.getxpos()-bombZ[i].getxpos()+5;
+			int n = player.getypos()-bombZ[i].getypos()+5;
+			if(m*m+n*n<30*30){a = true;break;}// Canh cua texture la 30
 		}
-		return false;
+		//return a;
 	}
 	else
 	{
 		for (int i = 0; i < n; i++)
 		{
-			int m = player.getxpos() - bombZ[i].getxpos() + 40;
-			int n = player.getxpos() - bombZ[i].getxpos() - 30;
-			int p = player.getypos() - bombZ[i].getypos() + 40;
-			int q = player.getypos() - bombZ[i].getypos() - 30;
-			if (m <= 0 || n >= 0 || p <= 0 || q >= 0) continue;
-			else return true;
-			// int m=player.getxpos()-bomb[i].getxpos()+5;// khoang cach giua 2 tam của 2 hình
-			// int n=player.getypos()-bomb[i].getypos()+5;
-			// if(m*m+n*n<30*30){a = true;break;}// Canh cua texture la 30
+			//int m = player.getxpos() - bombZ[i].getxpos() + 40;
+			//int n = player.getxpos() - bombZ[i].getxpos() - 30;
+			//int p = player.getypos() - bombZ[i].getypos() + 40;
+			//int q = player.getypos() - bombZ[i].getypos() - 30;
+			//if (m <= 0 || n >= 0 || p <= 0 || q >= 0) continue;
+			//else return true;
+			int m=player.getxpos()-bomb[i].getxpos()+5;// khoang cach giua 2 tam của 2 hình
+			int n=player.getypos()-bomb[i].getypos()+5;
+			if(m*m+n*n<30*30){a = true;break;}// Canh cua texture la 30
 		}
-		return false;
+		//return false;
 	}
-	return false;
+	return a;
 }
 // cap nhat diem so
 void RenderScore(SDL_Renderer *renderer, int score)
