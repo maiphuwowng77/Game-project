@@ -20,7 +20,6 @@
 - Cài đặt đường dẫn PATH đến **<ROOTDIR>\mingw64\bin**
 ```
 💡 Kiểm tra bằng cách gọi g++ và mingw32-make trong terminal
-
 ```
 ### Tải chương trình về máy tính cá nhân và chạy chương trình:
 -	Bước 1: Fork repository này về tài khoản Github của mình.
@@ -29,7 +28,11 @@
 -	Bước 4: Chạy chương trình bằng các lệnh sau ở mục terminal:
 ```
  cd Game-project
+```
+```
  mingw32-make
+```
+```
  .\main.exe
  ```
 <a name = "ii-mô-tả-chung-về-chương-trình"/>
