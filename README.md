@@ -9,6 +9,9 @@
 - [III. Các chức năng trong trò chơi](#iii-các-chức-năng-trong-trò-chơi)
 - [IV. Các kỹ thuật lập trình được sử dụng trong chương trình](#iv-các-kỹ-thuật-lập-trình-được-sử-dụng-trong-chương-trình)
 - [V.	Kết luận](#v-kết-luận)
+
+<a name = "i-hướng-dẫn-cài-đặt"/>
+
 ## I.	Hướng dẫn cài đặt:
 ### Cài đặt MinGW-W64:
 - Download MinGW-W64 GCC-7.3.0-SEH tại link https://sourceforge.net/projects/mingw-w64/files/Toolchains%20targetting%20Win64/Personal%20Builds/mingw-builds/7.3.0/threads-win32/seh/x86_64-7.3.0-release-win32-seh-rt_v5-rev0.7z/download
@@ -16,7 +19,8 @@
 - Copy thư mục `mingw64` vào **<ROOTDIR>** (Ví dụ `D:\software`)
 - Cài đặt đường dẫn PATH đến **<ROOTDIR>\mingw64\bin**
 ```
-💡 Kiểm tra bằng cách gọi `g++` và `mingw32-make` trong terminal
+💡 Kiểm tra bằng cách gọi g++ và mingw32-make trong terminal
+
 ```
 ### Tải chương trình về máy tính cá nhân và chạy chương trình:
 -	Bước 1: Fork repository này về tài khoản Github của mình.
@@ -28,10 +32,15 @@
  mingw32-make
  .\main.exe
  ```
+<a name = "ii-mô-tả-chung-về-chương-trình"/>
+
 ## II. Mô tả chung về chương trình:
 -	Game Treasure Hunt là một game vượt chướng ngại vật để tìm kiếm kho báu. Game có 3 level tương ứng với những độ khó khác nhau ( level càng cao thì càng nhiều vật cản và tốc độ của nhân vật cũng nhanh hơn). 
 
 -	Nhiệm vụ trong game: Nhiệm vụ của bạn trong game là điều khiển nhân vật bằng các nút (←, →, ↑ , ↓) để tránh khỏi các chướng ngại vật (Bom và tường). Trên đường di chuyển sẽ xuất hiện các viên kim cương, bạn lấy được càng nhiều kim cương thì điểm số càng cao. Nhiệm vụ cuối của bạn là tìm đến chỗ của kho báu. Khi lấy được kho báu nhiệm vụ của bạn hoàn thành và bạn là người chiến thắng.
+
+<a name = "iii-các-chức-năng-trong-trò-chơi"/>
+
 ## III.	Các chức năng trong trò chơi:
 ### Video minh họa sản phẩm: https://www.youtube.com/watch?v=t5bNhSYSl40
 -	Menu của game: Người chơi lựa chọn độ khó bằng các nút trên bàn phím theo hướng dẫn.
@@ -58,10 +67,16 @@
 ![score](https://i.imgur.com/F1XrKKk.jpg)
 
 -	Khi trò chơi kết thúc, người chơi ấn phím bất kì trên bàn phím để thoát chương trình.
+
+<a name = "iv-các-kỹ-thuật-lập-trình-được-sử-dụng-trong-chương-trình"/>
+
 ## IV.	Các kỹ thuật lập trình được sử dụng trong chương trình:
 -	Mảng ( các quả bom, tường và kim cương)
 -	Cấu trúc, lớp ( các lớp bom, kim cương, tường, người chơi và các hàm sử dụng để khởi tạo, hiện lên màn hình, di chuyển, xóa,…)
 -	Thư viện lập trình SDL2 và các thư viện mở rộng của nó: Các hàm cơ bản trong thư viện.
+
+<a name = "v-kết-luận"/>
+
 ## V.	Kết luận:
 ### Nguồn tham khảo:
 -	Cách sử dụng thư viện SDL2 trên trang https://lazyfoo.net/tutorials/SDL/
