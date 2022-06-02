@@ -386,14 +386,13 @@ void treasure(SDL_Renderer *renderer)
 // Kiem tra xem nguoi choi da den cho kho bau chua?
 bool Treasure(Player player)
 {
-	int m = player.getxpos() - 740;
-	int n = player.getypos() - 540;
-	if (m * m + n * n < 40 * 40)
-	{
-		return true;
-	} // Canh cua texture la 20
-	else
-		return false;
+	// hieu cua toa do canh duoi cua player va canh tren cua kho bau
+	int m = player.getxpos() - 740 + 40;
+	// hieu cua toa do canh phai cua player va canh trai cua kho bau
+	int p = player.getypos() - 540 + 40;
+	if (m <= 0 || p <= 0 ) return false;
+	else return true;
+	
 }
 
 // Tao ra 10 vi tri dat bom bat ki
@@ -459,9 +458,12 @@ bool explode(Player player, int n)
 			//	continue;
 			//else
 			//	return true;
-			int m = player.getxpos()-bombZ[i].getxpos()+5;
-			int n = player.getypos()-bombZ[i].getypos()+5;
-			if(m*m+n*n<30*30){a = true;break;}// Canh cua texture la 30
+			
+			// Hieu giua trọng tâm của 2 texture
+			int m = player.getxpos()+20 - bombZ[i].getxpos()-15;
+			int n = player.getypos()+20 - bombZ[i].getypos()-15;
+			// Neu khoang cach trong tam cua 2 texture nho hon 30 thi bom nổ
+			if(m*m+n*n<30*30){a = true;break;}
 		}
 		//return a;
 	}
@@ -673,15 +675,17 @@ int DIAMOND(Player player, int level)
 	for (int i = 0; i < 11; i++)
 	{
 		if (diamond[i].getclear() == 1) continue;
+		// hieu toa do canh duoi cua nguoi choi va canh tren cua kim cuong
 		int m = player.getxpos() - diamond[i].getxpos() + 40;
+		// hieu toa do canh tren cua nguoi choi va canh duoi cua kim cuong
 		int n = player.getxpos() - diamond[i].getxpos() - 30;
+		// hieu toa do canh phai cua nguoi choi va canh trai cua kim cuong
 		int p = player.getypos() - diamond[i].getypos() + 40;
+		// hieu toa do canh trai cua nguoi choi va canh phai cua kim cuong
 		int q = player.getypos() - diamond[i].getypos() - 30;
 		if (m <= 0 || n >= 0 || p <= 0 || q >= 0) continue;
 		else return i;
-		//int m = player.getxpos() - diamond[i].getxpos() + 5;
-		//int n = player.getypos() - diamond[i].getypos() + 5;
-		//if (m * m + n * n < 30 * 30){a = i;break;} // Canh cua texture la 30
+		
 	}
 	return -1;
 }
