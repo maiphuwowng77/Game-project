@@ -1,13 +1,34 @@
 
 # Game học phần Lập trình nâng cao : TREASURE HUNT
-      21020783 - Lương Mai Phương
+- Họ và tên: Lương Mai Phương
+- MSV: 21020783
+- Lớp môn học: INT2215_1, nhóm 9
+## Mục lục:
+- [I.	Hướng dẫn cài đặt](#i-hướng-dẫn-cài-đặt)
+- [II. Mô tả chung về chương trình](#ii-mô-tả-chung-về-chương-trình)
+- [III. Các chức năng trong trò chơi](#iii-các-chức-năng-trong-trò-chơi)
+- [IV. Các kỹ thuật lập trình được sử dụng trong chương trình](#iv-các-kỹ-thuật-lập-trình-được-sử-dụng-trong-chương-trình)
+- [V.	Kết luận](#v-kết-luận)
 ## I.	Hướng dẫn cài đặt:
--	Bước 1: Fork repository đó về tài khoản Github của mình.
+### Cài đặt MinGW-W64:
+- Download MinGW-W64 GCC-7.3.0-SEH tại link https://sourceforge.net/projects/mingw-w64/files/Toolchains%20targetting%20Win64/Personal%20Builds/mingw-builds/7.3.0/threads-win32/seh/x86_64-7.3.0-release-win32-seh-rt_v5-rev0.7z/download
+- Giải nén file x86_64-7.3.0-release-win32-seh-rt_v5-rev0.7z
+- Copy thư mục `mingw64` vào **<ROOTDIR>** (Ví dụ `D:\software`)
+- Cài đặt đường dẫn PATH đến **<ROOTDIR>\mingw64\bin**
+```
+💡 Kiểm tra bằng cách gọi `g++` và `mingw32-make` trong terminal
+```
+### Tải chương trình về máy tính cá nhân và chạy chương trình:
+-	Bước 1: Fork repository này về tài khoản Github của mình.
 - Bước 2: Sử dụng ứng dụng vscode (nếu chưa có tải về tại link https://code.visualstudio.com/download) 
 -	Bước 3: Sao chép repository trên về máy local bằng lệnh: git clone https://github.com/[YOUR_USERNAME]/Game-project.git tại mục terminal của vscode
--	Bước 4: Cài MinGW-W64, thư viện lập trình SDL2 và một số thư viện mở rộng của nó (SDL2_image, SDL2_ttf) theo hướng dẫn tại https://pie-cheque-188.notion.site/C-i-t-h-a-C-Windows-ef0a99a8dcae4dae86a39dc1cbc35980
--	Bước 5: Chạy chương trình bằng lệnh: mingw32-make và .\main ở mục terminal của vscode
-## II.	Mô tả chung về chương trình:
+-	Bước 4: Chạy chương trình bằng các lệnh sau ở mục terminal:
+```
+ cd Game-project
+ mingw32-make
+ .\main.exe
+ ```
+## II. Mô tả chung về chương trình:
 -	Game Treasure Hunt là một game vượt chướng ngại vật để tìm kiếm kho báu. Game có 3 level tương ứng với những độ khó khác nhau ( level càng cao thì càng nhiều vật cản và tốc độ của nhân vật cũng nhanh hơn). 
 
 -	Nhiệm vụ trong game: Nhiệm vụ của bạn trong game là điều khiển nhân vật bằng các nút (←, →, ↑ , ↓) để tránh khỏi các chướng ngại vật (Bom và tường). Trên đường di chuyển sẽ xuất hiện các viên kim cương, bạn lấy được càng nhiều kim cương thì điểm số càng cao. Nhiệm vụ cuối của bạn là tìm đến chỗ của kho báu. Khi lấy được kho báu nhiệm vụ của bạn hoàn thành và bạn là người chiến thắng.
